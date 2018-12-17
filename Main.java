@@ -2,10 +2,8 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Main
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
+public class Main{
+	public static void main (String[] args) throws java.lang.Exception{
 		Scanner s = new Scanner(System.in);
 		int m = s.nextInt();
 		int n = s.nextInt();
@@ -28,11 +26,11 @@ public class Main
 			System.out.flush();
 			int a = s.nextInt() * p[i];
 			i = (i + 1) % n;
-			if (a == 0) {
+			if (a == 0){
 				return;
-			} else if (a == -1) {
+			}else if (a == -1){
 				r = mm;
-			} else {
+			}else{
 				l = mm;
 			}
 		}
