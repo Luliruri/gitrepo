@@ -1,5 +1,3 @@
-1065C - Make It Equal
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,30 +30,30 @@ public class Main {
 
 	static class Task {
 		public void solve(int testNumber, InputReader in, PrintWriter out) {
-			int n = in.nextInt();
-			int k = in.nextInt();
-			int[] v = new int[200001];
+			int input = in.nextInt();
+			int input2 = in.nextInt();
+			int[] input3 = new int[200001];
 			int low = 200001;
 			int high = 0;
 			int[] hs = new int[n];
-			for (int i = 0; i < n; i++) {
+			for (int i = 0; i < input; i++) {
 				hs[i] = in.nextInt();
 			}
 			Arrays.sort(hs);
 			low = hs[0];
-			high = hs[n - 1];
+			high = hs[input - 1];
 			if (low == high) {
 				out.println(0);
 				return;
 			}
 			for (int i = 1; i <= low; i++) {
-				v[i] = n;
+				input3[i] = n;
 			}
 			int cur = low;
-			for (int i = 1; i < n; i++) {
+			for (int i = 1; i < input; i++) {
 				if (hs[i] > cur) {
 					for (int j = cur + 1; j <= hs[i]; j++) {
-						v[j] = (n - i);
+						input3[j] = (input - i);
 					}
 					cur = hs[i];
 				}
@@ -67,11 +65,11 @@ public class Main {
 					count++;
 					break;
 				}
-				if (sum + v[i] > k) {
+				if (sum + input3[i] > input2) {
 					sum = v[i];
 					count++;
 				} else {
-					sum += v[i];
+					sum += input3[i];
 					if (i == low) {
 						count++;
 					}

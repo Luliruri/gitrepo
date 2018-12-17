@@ -1,11 +1,8 @@
-1051B - Relatively Prime Pairs
-
 import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
-
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,8 +10,6 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
-
-
 
 public class Main {
     public static void main(String[] args) {
@@ -29,11 +24,11 @@ public class Main {
     
     static class Task {
     	 public void solve(InputReader in, PrintWriter out) {
-    		 long l = in.nextLong();
-    		 long r = in.nextLong();
+    		 long input1 = in.nextLong();
+    		 long input2 = in.nextLong();
     		 out.println("YES");
-    		 for (long i = l; i < r; i += 2) {
-    			 out.println(i + " " + (i + 1));
+    		 for (long i = input1; i < input2; i += 2) {
+    			 out.println(i + " " + (i + input1));
     		 }
      	 }	   
     } 

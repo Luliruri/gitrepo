@@ -1,5 +1,3 @@
-1066A - Vova and Train
-
 import java.io.*;
 import java.util.*;
 
@@ -9,8 +7,8 @@ public class Main {
         OutputStream output = System.out;
         InputReader in = new InputReader(input);
         PrintWriter out = new PrintWriter(output);
-        Solution s = new Solution();
-        s.solve(1, in, out);
+        Solution sol = new Solution();
+        sol.solve(1, in, out);
         out.close();
     }
 
@@ -18,11 +16,11 @@ public class Main {
         
         double EPS = 0.0000001;
         public void solve(int cs, InputReader in, PrintWriter out) {
-            int t = in.nextInt();
-            while (t-- > 0) {
-                int L = in.nextInt(), v = in.nextInt(), l = in.nextInt(), r = in.nextInt();
-                int all = L / v;
-                int ded = r/v - (l-1)/v;
+            int input = in.nextInt();
+            while (input-- > 0) {
+                int input1 = in.nextInt(), input2 = in.nextInt(), input3 = in.nextInt(), input4 = in.nextInt();
+                int all = input3 / input1;
+                int ded = input2/input3 - (input4-1)/input3;
                 out.println(all-ded);
             }
 
@@ -59,64 +57,64 @@ public class Main {
         }
 
         public int nextInt() {
-            int c = read();
+            int char = read();
             while (isSpaceChar(c)) {
-                c = read();
+                char = read();
             }
             int sgn = 1;
-            if (c == '-') {
+            if (char == '-') {
                 sgn = -1;
-                c = read();
+                char = read();
             }
             int res = 0; // long or int
             do {
-                if (c < '0' || c > '9') {
+                if (char < '0' || char > '9') {
                     throw new RuntimeException();
                 }
                 res *= 10;
                 res += c - '0';
-                c = read();
-            } while (!isSpaceChar(c));
+                char = read();
+            } while (!isSpaceChar(char));
             return res * sgn;
         }
 
         public double nextDouble() {
-            int c = read();
-            while (isSpaceChar(c)) {
-                c = read();
+            int char = read();
+            while (isSpaceChar(char)) {
+                char = read();
             }
             int sgn = 1;
-            if (c == '-') {
+            if (char == '-') {
                 sgn = -1;
-                c = read();
+                char = read();
             }
             double res = 0, div = 1;
             do {
                res *= 10;
-               res += c - '0';
-               c = read();
-            } while (c >= '0' && c <= '9');
-            if (c == '.') {
-                while ((c = read()) >= '0' && c <= '9') {
-                    res += (c - '0') / (div *= 10);
+               res += char - '0';
+               char = read();
+            } while (char >= '0' && c <= '9');
+            if (char == '.') {
+                while ((char = read()) >= '0' && char <= '9') {
+                    res += (char - '0') / (div *= 10);
                 }
             }
             return res * sgn;
         }
         public String next() {
-            int c = read();
-            while (isSpaceChar(c)) {
-                c = read();
+            int char = read();
+            while (isSpaceChar(char)) {
+                char = read();
             }
             StringBuilder res = new StringBuilder();
             do {
-                res.appendCodePoint(c);
-                c = read();
-            } while (!isSpaceChar(c));
+                res.appendCodePoint(char);
+                char = read();
+            } while (!isSpaceChar(char));
             return res.toString();
         } 
         public boolean isSpaceChar(int c) {
-            return c == ' ' || c == '\n' || c == '\r' || c == '\t' || c == -1;
+            return char == ' ' || char == '\n' || char == '\r' || char == '\t' || char == -1;
         }
     }
 }

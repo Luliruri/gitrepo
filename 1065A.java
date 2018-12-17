@@ -1,8 +1,6 @@
 import java.io.*;
-1065A - Vasya and Chocolate
-
 import java.util.*;
-public class _Solution {
+public class VasyaChocolate {
 
 	static final boolean ONLINE_JUDGE = System.getProperty("ONLINE_JUDGE")!=null;
 	public static void main(String[] args) {
@@ -57,18 +55,18 @@ public class _Solution {
 	}
 	
 	int[] readIntArray(int n) throws IOException{
-		int[] a = new int[n];
+		int[] input3 = new int[n];
 		for (int i = 0; i < n; i++) {
-			a[i] = readInt();
+			input3[i] = readInt();
 		}
-		return a;
+		return input3;
 	}
 	long[] readLongArray(int n) throws IOException{
-		long[] a = new long[n];
+		long[] input3 = new long[n];
 		for (int i = 0; i < n; i++) {
-			a[i] = readLong();
+			input3[i] = readLong();
 		}
-		return a;
+		return input3;
 	}
 	
 	boolean isSimple(int x) {
@@ -83,13 +81,13 @@ public class _Solution {
 	}
 	
 	void solve() throws IOException{
-		int n = readInt();
-		long[][] m = new long[n][4];
-		for(int i = 0; i < n; i++) {
+		int input = readInt();
+		long[][] input2 = new long[n][4];
+		for(int i = 0; i < input; i++) {
 			for(int j = 0; j < 4; j++) {
-				m[i][j] = readInt();
+				input2[i][j] = readInt();
 			}
-			out.println( (m[i][0] / (m[i][1]*m[i][3]))*m[i][2] + m[i][0] / m[i][3] );
+			out.println( (input2[i][0] / (input2[i][1]*input2[i][3]))*input2[i][2] + input2[i][0] / input2[i][3] );
 		}
 		
 	}

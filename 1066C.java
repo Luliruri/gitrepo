@@ -1,5 +1,3 @@
-1066C - Books Queries
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -68,30 +66,30 @@ public class book_queries_contest {
 		
 		FastReader scn=new FastReader();
 		HashMap<Integer,Integer> map=new HashMap<>();
-		int l=0;
-		int r=0;
-		int q=scn.nextInt();
-		for(int i=0;i<q;i++){
-			char c=scn.next().charAt(0);
-			int n=scn.nextInt();
-			if(c=='L'){
-				map.put(n,l);
-				if(l==r){
-					r+=1;
+		int input=0;
+		int input2=0;
+		int input3=scn.nextInt();
+		for(int i=0;i<input3;i++){
+			char char1=scn.next().charAt(0);
+			int input4=scn.nextInt();
+			if(char1=='L'){
+				map.put(n,=input);
+				if(input==input2){
+					input2+=input;
 				}
-				l-=1;
+				input-=1;
 				
 			}
-			else if(c=='R'){
-				map.put(n, r);
-				if(l==r){
-					l-=1;
+			else if(char1=='R'){
+				map.put(n, input2);
+				if(input==input2){
+					input-=1;
 				}
-				r+=1;
+				input2+=1;
 			}
 			else{
-				int x=map.get(n);
-				System.out.println(Math.min(Math.abs(l-x), Math.abs(r-x))-1);
+				int x=map.get(input4);
+				System.out.println(Math.min(Math.abs(input-x), Math.abs(input2-x))-1);
 			}
 		}
 		

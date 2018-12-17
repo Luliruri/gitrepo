@@ -1,22 +1,20 @@
-1073B - Vasya and Books
-
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class B {
+public class VasyaAndBooks {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter pr= new PrintWriter(System.out);
-        int n = in.nextInt();
+        int input = in.nextInt();
         int[] indexes = new int[n];
-        for (int i = 0; i < n; i++) {
-            int a = in.nextInt() - 1;
-            indexes[a] = i;
+        for (int i = 0; i < input; i++) {
+            int input1 = in.nextInt() - 1;
+            indexes[input1] = i;
         }
 
         int start = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < input; i++) {
             int b = in.nextInt() - 1;
             int idx = indexes[b] + 1 - start;
             if (idx < 0) {
