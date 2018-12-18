@@ -1,5 +1,3 @@
-Problem 1038A - Equality
-
 import java.util.*;
 public class Main {
     static Scanner s = new Scanner(System.in);

@@ -21,14 +21,12 @@ public class name
 			if(y<0||(x>=0&&a[x]>b[y])) {
 				counta+=a[x];
 				x--;
-			}
-			else
+			} else
 				y--;
 			if(x<0||(y>=0&&b[y]>a[x])) {
 				countb+=b[y];
 				y--;
-			}
-			else
+			} else
 				x--;
 		}
 		System.out.println(counta-countb);
