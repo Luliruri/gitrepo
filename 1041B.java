@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class TV {
+public class Television {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long a = sc.nextLong();
@@ -9,7 +9,8 @@ public class TV {
         long y = sc.nextLong();
         long k = 0;
         long g = gcd(x,y);
-        x /= g; y /= g;
+        x /= g;
+	y /= g;
         System.out.println(Math.min(a/x, b/y));
     }
     static long gcd(long a, long b) {
@@ -20,5 +21,3 @@ public class TV {
         }
         return a;
     }
-
-}
