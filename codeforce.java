@@ -1,5 +1,5 @@
 import java.util.*;
-public class codefore{
+public class codeForce{
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
@@ -18,4 +18,3 @@ public class codefore{
 			System.out.println(b);
 	}
 }
-	
