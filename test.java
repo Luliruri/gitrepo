@@ -1,10 +1,19 @@
-import java.util.*;
-public class test{
-    public static void main(String args[]){
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args){
+        String a,b;
+        
         Scanner in = new Scanner(System.in);
-        String s = in.next(), rep = s.replaceAll("1", ""), one = s.replaceAll("0", "").replaceAll("2", "");
-        int index = rep.indexOf("2");
-        if (index >= 0) System.out.print(rep.substring(0, index) + one + rep.substring(index));
-        else System.out.println(rep + one);
+        a = in.nextLine();
+        b = in.nextLine();
+        int i=a.length()-1, j=b.length()-1, ans=0;
+        char[] arrayA = a.toCharArray();
+        char[] arrayB = b.toCharArray();
+        while(i>=0 && j>=0){
+            if(arrayA[i--]==arrayB[j--]) ans++;
+            else break;;
+        }
+        System.out.println(a.length()+b.length()-2*ans);
     }
 }
