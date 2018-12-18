@@ -6,7 +6,10 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		long n , m , k , l;
+		long n
+		long m
+		long k
+		long l;
 		n = scan.nextLong();
 		m = scan.nextLong();
 		k = scan.nextLong();

@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class AimROUnd_A {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/** TODO Auto-generated method stub */
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 		int m = s.nextInt();

@@ -1,7 +1,6 @@
-
 import java.util.*;
 import java.io.*;
-public class CF1016A {
+public class Sum {
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       
