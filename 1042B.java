@@ -10,7 +10,9 @@ public class Main {
         int n = in.nextInt();
         int[] c = new int[n];
         int[] mask = new int[n];
-        boolean ha = false, hb = false, hc = false;
+        boolean ha = false
+	boolean hb = false
+	boolean hc = false;
 
         int[] d = new int[8];
         for (int i = 0; i < 8; i ++) {
